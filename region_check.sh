@@ -46,7 +46,12 @@ if [[ -z "$REGION" ]]; then
 fi
 
 # -----------------------------------------------------------------------------
-# 3) Download the appropriate domain file from the repo
+# 3) Clear the console before proceeding
+# -----------------------------------------------------------------------------
+clear
+
+# -----------------------------------------------------------------------------
+# 4) Download the appropriate domain file from the repo
 #    e.g., domains_rus.txt, domains_eu.txt, etc.
 # -----------------------------------------------------------------------------
 DOMAIN_FILE_NAME="domains_${REGION}.txt"
@@ -63,7 +68,7 @@ if [[ ! -s "$TEMP_FILE" ]]; then
 fi
 
 # -----------------------------------------------------------------------------
-# 4) Now we insert the logic from a colored, parallel domain check script
+# 5) Now we insert the logic from a colored, parallel domain check script
 #    (like your domain_check_parallel_colored.sh), but we replace references
 #    to the local 'domains.txt' with $TEMP_FILE.
 # -----------------------------------------------------------------------------
