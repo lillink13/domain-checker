@@ -18,7 +18,7 @@
 ###############################################################################
 
 # ==================== Version and Basic Variables ====================
-VERSION="1.1.2"
+VERSION="1.1.3"
 LANGUAGE="en"    # Default language is English (use --l ru for Russian)
 SAVE_FORMAT=""   # Format to save results: txt or json (via --s option)
 VERBOSE=0        # Verbose logging flag (via --v or --verbose)
@@ -65,9 +65,9 @@ done
 # Check for required region parameter
 if [[ -z "$REGION" ]]; then
   if [[ "$LANGUAGE" == "ru" ]]; then
-    echo "Error: you must specify --region <region>, e.g.: --region=rus"
+    echo "Ошибка: необходимо указать --region <region>, например: --region=ru"
   else
-    echo "Error: you must specify --region <region>, e.g.: --region=rus"
+    echo "Error: you must specify --region <region>, e.g.: --region=ru"
   fi
   exit 1
 fi
@@ -79,12 +79,12 @@ fi
 
 # ------------------ Set Message Texts Based on Language -------------------------
 if [[ "$LANGUAGE" == "ru" ]]; then
-    MSG_VERSION="Program version: %s\n"
-    MSG_FETCHING="Fetching domain list for region '%s' from GitHub repo..."
-    MSG_ERROR_DOWNLOAD="Error: could not download '%s'.\nPlease ensure the file exists in the repo or the region is correct."
-    MSG_START_CHECK="Starting domain checks for region: %s"
-    MSG_NO_VALID_DOMAINS="No valid domains found in '%s'."
-    MSG_FINAL_RESULTS="Final Results (sorted by ping) for region '%s':"
+    MSG_VERSION="Версия программы: %s\n"
+    MSG_FETCHING="Получение списка доменов для региона '%s' из репозитория GitHub..."
+    MSG_ERROR_DOWNLOAD="Ошибка: не удалось загрузить '%s'.\nУбедитесь, что файл существует в репозитории или регион указан неверно."
+    MSG_START_CHECK="Запуск проверки доменов для региона: %s"
+    MSG_NO_VALID_DOMAINS="В файле '%s' не найдено корректных доменов."
+    MSG_FINAL_RESULTS="Итоговые результаты (отсортированы по пингу) для региона '%s':"
     MSG_DONE="Done. Results above."
 else
     MSG_VERSION="Program version: %s\n"
@@ -93,7 +93,7 @@ else
     MSG_START_CHECK="Starting domain checks for region: %s"
     MSG_NO_VALID_DOMAINS="No valid domains found in '%s'."
     MSG_FINAL_RESULTS="Final Results (sorted by ping) for region '%s':"
-    MSG_DONE="Done. Results above."
+    MSG_DONE="Готово. Результаты выше."
 fi
 
 # ------------------- Initialize Logging if Verbose is Enabled ------------
