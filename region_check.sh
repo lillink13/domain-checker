@@ -85,7 +85,7 @@ if [[ "$LANGUAGE" == "ru" ]]; then
     MSG_START_CHECK="Запуск проверки доменов для региона: %s"
     MSG_NO_VALID_DOMAINS="В файле '%s' не найдено корректных доменов."
     MSG_FINAL_RESULTS="Итоговые результаты (отсортированы по пингу) для региона '%s':"
-    MSG_DONE="Done. Results above."
+    MSG_DONE="Готово. Результаты выше."
 else
     MSG_VERSION="Program version: %s\n"
     MSG_FETCHING="Fetching domain list for region '%s' from GitHub repo..."
@@ -93,7 +93,7 @@ else
     MSG_START_CHECK="Starting domain checks for region: %s"
     MSG_NO_VALID_DOMAINS="No valid domains found in '%s'."
     MSG_FINAL_RESULTS="Final Results (sorted by ping) for region '%s':"
-    MSG_DONE="Готово. Результаты выше."
+    MSG_DONE="Done. Results above."
 fi
 
 # ------------------- Initialize Logging if Verbose is Enabled ------------
