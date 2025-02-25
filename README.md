@@ -25,11 +25,12 @@ bash <(curl -sL https://raw.githubusercontent.com/lillink13/domain-checker/main/
     **Supported Regions:**
     
     - `eu` (European Union)
-    
-    **WIP (Work in Progress) Regions:**
-    
     - `us` (United States)
-	- `rus` (Russia)
+	- `ru` (Russia)
+    - `ww` (World Wide, containing domains from all regions)
+
+    **WIP (Work in Progress) Regions:**
+
     - `cn` (China)
     
     **Queue (Planned) Regions:**
