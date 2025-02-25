@@ -18,7 +18,7 @@
 ###############################################################################
 
 # ==================== Version and Basic Variables ====================
-VERSION="1.1.3"
+VERSION="2.0.0"
 LANGUAGE="en"    # Default language is English (use --l ru for Russian)
 SAVE_FORMAT=""   # Format to save results: txt or json (via --s option)
 VERBOSE=0        # Verbose logging flag (via --v or --verbose)
@@ -127,7 +127,7 @@ log_message "Console cleared and version printed."
 REPO_BASE="https://raw.githubusercontent.com/lillink13/domain-checker/main"
 
 # 2) Download the appropriate domain file from the repo
-DOMAIN_FILE_NAME="domains_${REGION}.txt"
+DOMAIN_FILE_NAME="domains/domains_${REGION}.txt"
 TEMP_FILE="/tmp/domains_${REGION}_$$.txt"
 
 printf "\n$MSG_FETCHING\n" "$REGION"
